@@ -2,18 +2,18 @@
 <html lang="en">
     <head>
 		<meta charset="utf-8">
-        	<title>Language Knowledge</title>
-			<link rel="icon" type="image" href="Photos/ICON.png">
+        <title>Language Knowledge</title>
+		<link rel="icon" type="image" href="Photos/ICON.png">
 		<meta name="viewport" content="width=device-width">
     </head>
     <body>
 		<!--My First Webpage-->
 		<header>
-			<p align="center"><img src="Photos/LOGO.png" alt="Logo" height="50" width="90"></p>
+			<p align="center"><img src="Photos/LOGO.png" alt="Logo" height="100" width="180"></p>
 			<blockquote><h3>"<i><dfn id="top">Knowledge</dfn></i> is the most valuable treasure of the world."</h3></blockquote>
 			<h3><p align="right"><bdi>المعرفة هي الكنز الأكثر قيمة في العالم</bdi></p></h3>
 		</header>
-		<p align="center"><del><bdo dir="rtl">TRY TO READ THIS!</bdo></del> <ins>TRY TO READ THIS!</ins></p>
+		<p align="center"><del><bdo dir="rtl">TRY TO READ THIS!</bdo></del><br><ins>TRY TO READ THIS!</ins></p>
         <fieldset>
 			<legend><h3>Dictionaries</h3></legend>
 				<h2><i>English Dictionaries</i></h2>
@@ -86,7 +86,20 @@
 	</details>
 	<form action="/action_page.php">
 		<fieldset>
-			<legend><h4>Fill your information here</h4></legend>
+			<legend><h4>Fill your information here</h4></legend>	
+				<label for="Nt">Name Title:</label>
+					<select name="nametitle" id="Nt">
+						<optgroup label="Basic">
+							<option value="mister">Mr.</option>
+							<option value="missis">Mrs.</option>
+							<option value="miss">Miss</option>
+							<option value="ms">Ms.</option>
+						</optgroup>
+						<optgroup label="Other">
+							<option value="notitle">No title</option>
+							<option value="nomention">No mention</option>
+						</optgroup>
+					</select><br><br>
 				<label for="Fn">First Name:</label>
 				<input type="text" id="Fn" name="firstname"><br><br>
 				<label for="Ln">Last Name:</label>
@@ -105,7 +118,7 @@
 					<input type="radio" name="nativelang" id="malay" title="malay">
 					<label for="malay">Malay</label><br>
 					<input type="radio" name="nativelang" id="other" title="other">
-					<label for="malay">Other</label><br><br>
+					<label for="other">Other</label><br><br>
 				Which language(s) do you speak?<br>
 					<input type="checkbox" name="ablelang" id="thai" title="thai">
 					<label for="thai">Thai</label><br>
@@ -116,19 +129,30 @@
 					<input type="checkbox" name="ablelang" id="malay" title="malay">
 					<label for="malay">Malay</label><br>
 					<input type="checkbox" name="ablelang" id="others" title="others">
-					<label for="malay">Other(s)</label><br><br>
+					<label for="others">Other(s)</label><br><br>
 				</form>
 				<button type="reset">Reset</button>
 				<button type="submit">Submit</button>
 		</fieldset>
 	</form>
 		<p align="right">"Therefore, you should get the essential knowledge for your future!"</p>
-	<address>
-		<p align="right"><a href="https://www.facebook.com/friendship1502" target="_blank" rel="noopener"><img src="Photos/MPP.jpg" alt="Creator's profile picture" width="100" height="100"></a><br>
-            <i>Mr. Aphisit Lanlongsa</i><br>
-				Webpage Creator<br>
-            <a href="mailto:aphisit.lanlongsa@gmail.com">aphisit.lanlongsa@gmail.com</a></p>
-    </address>
+		<address>
+			<p align="right"><a href="https://www.facebook.com/friendship1502" target="_blank" rel="noopener"><img src="Photos/MPP.jpg" alt="Creator's profile picture" width="100" height="100"></a><br>
+				<i>Mr. Aphisit Lanlongsa</i><br>
+					Webpage Creator<br>
+					<a href="mailto:aphisit.lanlongsa@gmail.com">aphisit.lanlongsa@gmail.com</a></p>
+				<details align="right">
+					<summary>My languages' proficiency</summary>
+						<label for="thai">Thai:</label>
+						<meter id="thai" value="1"></meter><br>
+						<label for="english">English:</label>
+						<meter id="english" value="0.75"></meter><br>
+						<label for="chinese">Chinese:</label>
+						<meter id="chinese" value="0.25"></meter><br>
+						<label for="malay">Malay:</label>
+						<meter id="malay" value="0.5"></meter>
+				</details>
+    	</address>
     <footer>
 		<a href="#top"><h3><p align="center">^GO TO TOP^</p></h3></a>
 	</footer>
