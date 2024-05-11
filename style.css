@@ -1,0 +1,136 @@
+@font-face {
+    font-family: por;
+    src: url(Fonts/por.woff);
+}
+body {
+    font-family: por;
+    background: linear-gradient(45deg, pink, lightblue);
+}
+input#srch {
+    height: 20px;
+    border-color: blue;
+    border-radius: 10px;
+}
+hr {
+    height: 100px;
+    border-style: none;
+}
+div#t {
+    width: auto; 
+    height: auto; 
+    background-color: lightblue;
+    padding: 10px;
+}
+div#b {
+    width: auto; 
+    height: auto; 
+    background-color: pink;
+    padding: 10px;
+}
+button.re {
+    color: black;
+    background-color: orangered;
+    border-color: orange;
+}
+button.re:hover {
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+}
+button.sub {
+    color: black;
+    background-color: aquamarine;
+    border-color: aqua;
+}
+button.sub:hover {
+    color: white;
+    background-color: blue;
+    border-radius: 4px;
+}
+button.send {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border-color: greenyellow;
+}
+button.send:hover {
+    color: black;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+a input {
+    font-size: 18px;
+    color: white;
+    width: 260px;
+    background-color: goldenrod;
+    border-color: gold;
+    text-shadow: 2px 2px 2px black;
+
+}
+a input:hover {
+    color: black;
+    background-color: gold;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px white;
+}
+fieldset {
+    background-color: bisque;
+    opacity: 0.8;
+    border: double 6px burlywood;
+}
+.r {
+    text-align: right;
+}
+.c {
+    text-align: center;
+}
+table.c {
+    margin-left: auto;
+    margin-right: auto;
+}
+b > pre {
+    text-align: left;
+    color: green;
+}
+input[type="radio"], input[type="checkbox"] {
+    accent-color: black;
+}
+input[type="text"], input[type="email"], input[type="date"], select {
+    border-color: gold;
+    border-radius: 4px;
+}
+textarea {
+    margin-top: 10px;
+    background: none;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: purple;
+}
+audio {
+    opacity: 0.8;
+}
+#podpict {
+    display: block;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+#logo {
+    display: block;
+    margin-left: auto;
+    width: 80px;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 2px 2px);
+}
+#profile {
+    display: block;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px;
+}
