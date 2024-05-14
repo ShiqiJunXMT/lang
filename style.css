@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: por;
     src: url(Fonts/por.woff);
@@ -6,102 +11,160 @@ body {
     font-family: por;
     background: linear-gradient(45deg, pink, lightblue);
 }
+blockquote, bdi {
+    color: white;
+    display: block;
+    position: relative;
+    animation: opa 4s 2s linear alternate infinite;
+}
+@keyframes opa {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.ml {
+    margin-left: 10px;
+    text-align: left;
+}
+.mr {
+    display: block;
+    margin-right: 10px;
+    text-align: right;
+}
+.mc {
+    margin: auto;
+    text-align: center;
+}
+.cul {
+    text-decoration: none;
+}
+.mcs {
+    cursor: pointer;
+}
+del {
+    opacity: 0.2;
+}
 input#srch {
-    height: 20px;
+    margin: 10px;
+    height: 30px;
     border-color: blue;
     border-radius: 10px;
 }
 hr {
-    height: 100px;
+    margin: 10px 0px;
+    height: 40px;
     border-style: none;
 }
 div#t {
     width: auto; 
     height: auto; 
-    background-color: lightblue;
-    padding: 10px;
+    background: linear-gradient(90deg,blue,lightblue);
+    padding: 20px 10px;
+    border-bottom-left-radius: 50%;
+    z-index: -2;
 }
 div#b {
     width: auto; 
     height: auto; 
-    background-color: pink;
-    padding: 10px;
+    background: linear-gradient(-90deg,red,pink);
+    padding: 20px 10px;
+    border-top-right-radius: 50%;
+    z-index: -2;
 }
 button.re {
+    padding: 8px;
     color: black;
     background-color: orangered;
     border-color: orange;
+    margin-right: 10px;
+    border-radius: 4px;
 }
 button.re:hover {
     color: white;
     background-color: red;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 button.sub {
+    padding: 8px;
     color: black;
     background-color: aquamarine;
     border-color: aqua;
+    margin-right: 10px;
+    border-radius: 4px;
 }
 button.sub:hover {
     color: white;
     background-color: blue;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 button.send {
-    margin-bottom: 10px;
+    padding: 8px;
+    margin-right: 10px;
     font-size: 16px;
     color: white;
     background-color: green;
     border-color: greenyellow;
+    border-radius: 8px;
 }
 button.send:hover {
     color: black;
     background-color: greenyellow;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 a input {
-    font-size: 18px;
+    font-size: 14px;
     color: white;
-    width: 260px;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    margin: 10px;
     background-color: goldenrod;
     border-color: gold;
+    border-radius: 4px;
     text-shadow: 2px 2px 2px black;
-
+    transition: transform linear 0.25s;
 }
 a input:hover {
     color: black;
     background-color: gold;
     border-radius: 10px;
     text-shadow: 2px 2px 2px white;
+    transform: scale(1.08);
 }
-fieldset {
-    background-color: bisque;
-    opacity: 0.8;
-    border: double 6px burlywood;
+fieldset#lightblue {
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: none;
+    border: solid 4px rgba(0, 0, 255, 0.5);
+    border-radius: 12px;
+    z-index: -1;
 }
-.r {
-    text-align: right;
+fieldset#pink {
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: none;
+    border: solid 4px rgba(255, 0, 0, 0.5);
+    border-radius: 12px;
+    z-index: -1;
 }
-.c {
-    text-align: center;
-}
-table.c {
-    margin-left: auto;
-    margin-right: auto;
+table.mc {
+    transform: scale(0.9);
+    margin: auto;
 }
 b > pre {
     text-align: left;
     color: green;
 }
-input[type="radio"], input[type="checkbox"] {
-    accent-color: black;
+input[type="radio"], input[type="checkbox"], progress {
+    accent-color: gold;
 }
 input[type="text"], input[type="email"], input[type="date"], select {
     border-color: gold;
     border-radius: 4px;
 }
 textarea {
-    margin-top: 10px;
+    resize: none;
+    margin: 10px;
+    z-index: -1;
     background: none;
     border-radius: 8px;
     border-width: 2px;
@@ -109,28 +172,112 @@ textarea {
 }
 audio {
     opacity: 0.8;
+    transform: scale(0.8);
 }
 #podpict {
-    display: block;
+    margin: 10px;
+    height: 100px;
     border-radius: 8px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.8;
+}
+#nav {
+    list-style-type: none;
+    position: sticky;
+    display: flexbox;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: auto;
+    border-radius: 8px;
+    top: 20px;
+    float: left;
+    margin: 20px 20px 20px 50px;
+    z-index: 1;
+}
+#nav a {
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 156px;
+    margin: 2px 1px;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 2px 2px 2px;
+}
+#nav a:hover {
+    background-color: white;
+    border-radius: 4px;
+    transform: scale(1.02);
+    box-shadow: none;
+}
+span {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+#nav a:hover span{
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+span.extl {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px red;
 }
 #logo {
-    display: block;
-    margin-left: auto;
-    width: 80px;
-    position: sticky;
-    top: 10px;
-    margin-bottom: 10px;
+    float: right;
+    margin-left: 10px;
+    width: 74px;
+    /*margin-right: 50px;
+    margin-top: 25px;*/
     filter: drop-shadow(2px 2px 2px);
+    z-index: 1;
+}
+#top {
+    clear: both;
+    display: block;
 }
 #profile {
     display: block;
     margin-left: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: blur(1px);
     box-shadow: 2px 2px 4px;
+    transition: blur ease 1s, border-radius ease 1s;
+}
+#profile:hover {
+    opacity: 1;
+    border-radius: 25%;
+    filter:blur(0px);
+}
+.imgrotgp {
+    position: absolute;
+    height: 400px;
+    margin-left: -200px;
+    z-index: -1;
+    animation: rotegp 20s linear infinite;
+}
+@keyframes rotegp {
+    0% {transform: scale(0.8) rotate(0deg); opacity: 1;}
+    50% {transform: scale(0.6) rotate(180deg); opacity: 0;}
+    100% {transform: scale(0.8) rotate(360deg);opacity: 1;}
+}
+.imgrotry {
+    position: absolute;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: -100px;
+    animation: rotery 10s linear infinite;
+}
+@keyframes rotery {
+    0% {transform: scale(1.4) rotate(0deg); opacity: 0;}
+    50% {transform: scale(1.2) rotate(-180deg); opacity: 1;}
+    100% {transform: scale(1.4) rotate(-360deg); opacity: 0;}
 }

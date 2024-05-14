@@ -6,5 +6,9 @@
     "defaults",
     "not ie 11",
     "not samsung <= 24"
-  ]
+  ],
+  "hints": {
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
+  }
 }
